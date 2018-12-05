@@ -5,19 +5,14 @@ for i in array:
     if i not in non_double_array:
         non_double_array.append(i)
 
-
-max1 = max(array)
-max2 = max(array.remove(max1))
-max3 = max(array.remove(max1, max2))
-max_list = [max1, max2, max3]
-
+lst_sort = sorted(array)
+max3 = lst_sort[-3:]
 
 min_index = array.index(min(array))
 
 reverse_array = array[::-1]
 
-
-print(non_double_array)
-print(min_index)
-print(max_list)
-print(reverse_array)
+print('1.', non_double_array)
+print('2.',  max3)
+print('3.', min_index)
+print('4.', reverse_array)
