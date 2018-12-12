@@ -64,3 +64,37 @@ def first_word(string):
 string = input('print your string')
 
 print(first_word(string))
+
+# Задача-4
+# Изменить исходную строку на новую строку в которой первый и последний символы строки поменяны местами.
+
+print('task 4')
+
+string = input('please input string')
+
+
+def new_string(string):
+    return string[-1] + string[1:-1] + string[0]
+
+
+print(new_string(string))
+
+# Задача-5
+# Дан тапл(tuple), необходимо его конвертнуть в стринг.
+# Например:
+# ('e', 'x', 'e', 'r', 'c', 'i', 's', 'e', 's') == 'exercises
+
+print('task 5')
+
+
+income_tuple = ('e', 'x', 'e', 'r', 'c', 'i', 's', 'e', 's')
+
+
+def convert(income_tuple):
+    outcome_string = ''
+    for el in income_tuple:
+        outcome_string += el
+    return outcome_string
+
+
+print(convert(income_tuple))
