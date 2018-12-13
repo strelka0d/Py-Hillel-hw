@@ -74,7 +74,10 @@ string = input('please input string')
 
 
 def new_string(string):
-    return string[-1] + string[1:-1] + string[0]
+    if len(string) == 2 or len(string) == 3:
+        return string[::-1]
+    else:
+        return string[-1] + string[1:-1] + string[0]
 
 
 print(new_string(string))
