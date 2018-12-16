@@ -23,7 +23,9 @@ def min_el_out_A(A):
         if num not in A:
             return num
 
+
 print(min_el_out_A(A))
+
 # ==========================
 # TASK-2
 # A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by ones
@@ -45,7 +47,9 @@ print(min_el_out_A(A))
 # Assume that:
 # N is an integer within the range [1..2,147,483,647].
 print('TASK-2')
+
 N = int(input('please, put a number'))
+
 print(bin(N))
 
 
@@ -110,7 +114,6 @@ def rotate_list(lst, k):
     while n <= k:
         res = [res[-1]] + res[:-1]
         n += 1
-
     return res
 
 

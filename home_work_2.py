@@ -72,7 +72,7 @@ def mult_num(num):
     result = 1
     for i in str(num):
 
-        if int(i) == 0:
+        if not int(i):
             continue
         result *= int(i)
     return result
