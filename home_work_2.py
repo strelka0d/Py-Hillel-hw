@@ -37,6 +37,7 @@ for info in data:
     data_city[info.get('city')] = data_city.get(info.get('city'), [])
     data_city.get(info.get('city'), [])
     data_city[info.get('city')].append(info)
+    del info['city']
 
 print(data_city)
 
